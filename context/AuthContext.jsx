@@ -14,7 +14,12 @@ import {
   useIsAuthenticated,
   useMsal,
 } from "@azure/msal-react";
-import { createMsalInstance, loginRequest, apiRequest } from "@/lib/msalConfig";
+import {
+  createMsalInstance,
+  loginRequest,
+  apiRequest,
+  msalConfig,
+} from "@/lib/msalConfig";
 
 const msalInstance = createMsalInstance();
 
@@ -31,12 +36,18 @@ const formatMsalError = (error) => {
 };
 
 // hydrate any existing session before React renders children
-msalInstance.initialize().then(() => {
-  const cachedAccounts = msalInstance.getAllAccounts();
-  if (cachedAccounts.length && !msalInstance.getActiveAccount()) {
-    msalInstance.setActiveAccount(cachedAccounts[0]);
-  }
-});
+const msalInitializationPromise = msalInstance
+  .initialize()
+  .then(() => {
+    const cachedAccounts = msalInstance.getAllAccounts();
+    if (cachedAccounts.length && !msalInstance.getActiveAccount()) {
+      msalInstance.setActiveAccount(cachedAccounts[0]);
+    }
+  })
+  .catch((error) => {
+    console.error("MSAL initialization failed:", error);
+    throw error;
+  });
 
 const AuthContext = createContext(null);
 
@@ -63,6 +74,7 @@ const AuthProviderInner = ({ children }) => {
 
     const bootstrap = async () => {
       try {
+        await msalInitializationPromise;
         const redirectResponse = await instance.handleRedirectPromise();
         const activeAccount =
           redirectResponse?.account ??
@@ -157,24 +169,35 @@ const AuthProviderInner = ({ children }) => {
 
   const logout = useCallback(async () => {
     setLoading(true);
+    clearAuthError();
     try {
       await instance.logoutPopup();
       setUser(null);
     } catch (error) {
       console.error("Logout failed:", error);
+      setAuthError(formatMsalError(error));
     } finally {
       setLoading(false);
     }
-  }, [instance]);
+  }, [instance, clearAuthError]);
 
   const logoutRedirect = useCallback(async () => {
+    setLoading(true);
+    clearAuthError();
     try {
-      await instance.logoutRedirect();
+      await instance.logoutRedirect({
+        postLogoutRedirectUri:
+          typeof window !== "undefined"
+            ? window.location.origin
+            : msalConfig.auth.postLogoutRedirectUri,
+      });
       setUser(null);
     } catch (error) {
       console.error("Logout redirect failed:", error);
+      setAuthError(formatMsalError(error));
+      setLoading(false);
     }
-  }, [instance]);
+  }, [instance, clearAuthError]);
 
   const acquireToken = useCallback(
     async (request) => {

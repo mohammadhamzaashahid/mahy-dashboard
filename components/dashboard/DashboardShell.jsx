@@ -44,7 +44,6 @@ export default function DashboardShell() {
         </div>
       </header>
 
-      {/* MAIN BODY */}
       <main className="flex-1 flex flex-col">
         {/* If no tile selected ƒ+' show tiles */}
         {!selectedTile && (
