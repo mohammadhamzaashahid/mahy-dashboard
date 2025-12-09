@@ -24,7 +24,7 @@ export const metadata = {
     siteName: "Mahy Khoory Analytics",
     images: [
       {
-        url: "/data-analytics.ico", 
+        url: "/data-analytics.png", 
         width: 600,
         height: 600,
         alt: "Mahy Khoory Analytics",
