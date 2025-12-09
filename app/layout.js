@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  icons: {
+    icon: "/data-analytics.ico",   
+  },
   title: "Mahy Khoory Analytics",
-  description: "Powered by Mahy IT",
+  description: "Powered by the MAHY Khoory ERP Team",
 };
 
 export default function RootLayout({ children }) {

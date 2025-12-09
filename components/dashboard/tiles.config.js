@@ -27,12 +27,19 @@ export const TILE_CONFIG = [
         category: "Finance",
         reportUrl: "https://app.powerbi.com/reportEmbed?reportId=f2ce8fbd-0348-4146-a6c3-d97170ff6269&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
-    {
-        id: "trial-balance",
-        label: "Trial Balance",
-        icon: "/dashboard-icons/book.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    // {
+    //     id: "trial-balance",
+    //     label: "Trial Balance",
+    //     icon: "/dashboard-icons/book.png",
+    //     category: "Finance",
+    //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    // },
+     {
+        id: "collection",
+        label: "Collection",
+        icon: "/dashboard-icons/tips.png",
+        category: "Receivables",
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=902e41fd-576b-46ce-b2e1-773a7cda47ae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
 
     {
@@ -40,7 +47,7 @@ export const TILE_CONFIG = [
         label: "Sales by Cost Center",
         icon: "/dashboard-icons/sales.png",
         category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=d9332fbf-74e2-49c4-a053-5724b8db4dae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "sales-vs-target",
@@ -61,7 +68,7 @@ export const TILE_CONFIG = [
         label: "Sales Brandwise",
         icon: "/dashboard-icons/brand.png",
         category: "Sales",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "delivered-not-invoiced",
@@ -76,12 +83,12 @@ export const TILE_CONFIG = [
         label: "Receivables Summary",
         icon: "/dashboard-icons/money.png",
         category: "Receivables",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=cef60576-2fd7-419a-8b52-92dbdd08fa38&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
-        id: "collection",
-        label: "Collection",
-        icon: "/dashboard-icons/tips.png",
+        id: "customer-complain",
+        label: "Customer Complain",
+        icon: "/dashboard-icons/complain.png",
         category: "Receivables",
         reportUrl: "https://app.powerbi.com/reportEmbed?reportId=902e41fd-576b-46ce-b2e1-773a7cda47ae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
@@ -90,7 +97,7 @@ export const TILE_CONFIG = [
         label: "Overdue Collection",
         icon: "/dashboard-icons/expired.png",
         category: "Receivables",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "customer-balance",
@@ -133,7 +140,7 @@ export const TILE_CONFIG = [
         label: "Customer Overdue",
         icon: "/dashboard-icons/cheque.png",
         category: "Receivables",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=0f993fdc-d7cd-414c-ab9e-10764fbbb686&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
 
     {
@@ -169,14 +176,14 @@ export const TILE_CONFIG = [
         label: "Return Orders",
         icon: "/dashboard-icons/warehouse.png",
         category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=cc7833f2-ad49-451c-af93-0dbf6f78eefd&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=a13e7f6b-0b2f-4e57-a4cd-2cc103aa29fd&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "payables-summary",
         label: "Payables Summary",
         icon: "/dashboard-icons/card-payment.png",
         category: "Finance",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "vendor-item-analysis",
@@ -204,14 +211,14 @@ export const TILE_CONFIG = [
         label: "Vendor Overdue",
         icon: "/dashboard-icons/wait-time.png",
         category: "Procurement",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=eebe8edf-a980-4344-86d2-e759e26c2b2a&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "vendor-analysis",
         label: "Vendor Analysis",
         icon: "/dashboard-icons/analysis.png",
         category: "Procurement",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=674051d1-3320-4dae-8208-179bd49c1c76&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
 
     {

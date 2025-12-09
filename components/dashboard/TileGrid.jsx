@@ -82,8 +82,8 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
   const renderTile = (tile, index) => {
     const palette = getPalette(tile.id, index);
     const isActive = activeTileId === tile.id;
-    const neonShadow = `0 0 18px ${palette.border}, 0 0 35px ${palette.border}, 0 0 55px ${palette.bg}`;
-    const neonGradient = `radial-gradient(circle at 30% 20%, ${palette.border}55, transparent 60%)`;
+    const neonShadow = `0 6px 22px ${palette.border}88, 0 14px 45px ${palette.bg}A0`;
+    const neonGradient = `radial-gradient(circle at 45% 30%, ${palette.border}60 0%, ${palette.bg}35 45%, transparent 75%)`;
 
     return (
       <button
@@ -102,14 +102,14 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
       >
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -inset-2 -z-10 rounded-[2rem] opacity-0 blur-2xl transition duration-300 group-hover:opacity-90"
+          className="pointer-events-none absolute -inset-2 -z-10 rounded-[2rem] opacity-0 blur-3xl transition duration-300 group-hover:opacity-80"
           style={{
             background: neonGradient,
           }}
         />
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute inset-1 rounded-[1.1rem] opacity-0 transition duration-300 group-hover:opacity-100"
+          className="pointer-events-none absolute inset-1 rounded-[1.1rem] opacity-0 transition duration-300 group-hover:opacity-95"
           style={{
             boxShadow: neonShadow,
           }}
