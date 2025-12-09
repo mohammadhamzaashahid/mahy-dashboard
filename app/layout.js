@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://mkanalyticshub.com"),
+  metadataBase: new URL("https://www.mkanalyticshub.com"),
   icons: {
     icon: "/data-analytics.ico",
   },
