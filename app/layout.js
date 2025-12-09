@@ -13,8 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://mkanalyticshub.com"),
   icons: {
-    icon: "/data-analytics.ico",   
+    icon: "/data-analytics.ico",
+  },
+  openGraph: {
+    title: "Mahy Khoory Analytics",
+    description: "Powered by the MAHY Khoory ERP Team",
+    url: "/",
+    siteName: "Mahy Khoory Analytics",
+    images: [
+      {
+        url: "/data-analytics.ico", 
+        width: 600,
+        height: 600,
+        alt: "Mahy Khoory Analytics",
+      },
+    ],
+    type: "website",
   },
   title: "Mahy Khoory Analytics",
   description: "Powered by the MAHY Khoory ERP Team",
