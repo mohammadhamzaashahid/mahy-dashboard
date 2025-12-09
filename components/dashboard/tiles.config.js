@@ -18,7 +18,7 @@ export const TILE_CONFIG = [
         label: "Salary Summary",
         icon: "/dashboard-icons/salary.png",
         category: "Finance",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=eb95ffb2-c222-499a-ae09-3b3c1cf74647&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "bank-balance",
@@ -87,10 +87,10 @@ export const TILE_CONFIG = [
     },
     {
         id: "customer-complain",
-        label: "Customer Complain",
+        label: "Customer Complaint",
         icon: "/dashboard-icons/complain.png",
         category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=902e41fd-576b-46ce-b2e1-773a7cda47ae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=4267208a-0e1a-49c9-ac0e-b8fff9183949&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "delayed-collection",
@@ -148,7 +148,7 @@ export const TILE_CONFIG = [
         label: "Expenses",
         icon: "/dashboard-icons/bill.png",
         category: "Finance",
-        reportUrl: null,
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=acb5da72-78e6-4eac-a262-abf6b30ce429&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "stock-purchase",

@@ -39,7 +39,7 @@ const TILE_COLOR_MAP = {
   "credit-per-sales-unit": { bg: "#FCE697" },
   "pdc-analysis": { bg: "#E3B6EC" },
   "customer-overdue": { bg: "#D6F2FF" },
-  "bank-balance": { bg: "#F6CBE0" },
+  "bank-balance": { bg: "#D3F8E2" },
   "stock-purchase": { bg: "#8FD8FF" },
   "non-stock-purchase": { bg: "#F6C7A6" },
   production: { bg: "#D9C5FF" },
