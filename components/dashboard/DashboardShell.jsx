@@ -22,7 +22,7 @@ export default function DashboardShell() {
             MAHY Khoory Analytics
           </h1>
           <p className="text-xs md:text-sm text-slate-300">
-            One-click access to strategic Power BI insights
+            Empowering the Group with Clarity, Intelligence, and Data-Driven Excellence.
           </p>
         </div>
         <div className="flex flex-col items-start gap-2 text-xs text-slate-300 md:items-end">
