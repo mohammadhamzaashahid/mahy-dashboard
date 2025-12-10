@@ -34,7 +34,7 @@ export const TILE_CONFIG = [
     //     category: "Finance",
     //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     // },
-     {
+    {
         id: "collection",
         label: "Collection",
         icon: "/dashboard-icons/tips.png",
@@ -50,11 +50,11 @@ export const TILE_CONFIG = [
         reportUrl: "https://app.powerbi.com/reportEmbed?reportId=d9332fbf-74e2-49c4-a053-5724b8db4dae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
-        id: "sales-vs-target",
-        label: "Sales vs Target",
-        icon: "/dashboard-icons/medium.png",
+        id: "sales-brandwise",
+        label: "Sales Brandwise",
+        icon: "/dashboard-icons/brand.png",
         category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=e7cd96c9-9823-464a-9ee6-2105de712563&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "sales-vs-collection",
@@ -63,12 +63,19 @@ export const TILE_CONFIG = [
         category: "Sales",
         reportUrl: "https://app.powerbi.com/reportEmbed?reportId=7fa715e8-a836-4bbd-9aa6-d8ed4378be9b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
+    // {
+    //     id: "sales-brandwise",
+    //     label: "Sales Brandwise",
+    //     icon: "/dashboard-icons/brand.png",
+    //     category: "Sales",
+    //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    // },
     {
-        id: "sales-brandwise",
-        label: "Sales Brandwise",
-        icon: "/dashboard-icons/brand.png",
+        id: "sales-vs-target",
+        label: "Sales vs Target",
+        icon: "/dashboard-icons/medium.png",
         category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=e7cd96c9-9823-464a-9ee6-2105de712563&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     },
     {
         id: "delivered-not-invoiced",

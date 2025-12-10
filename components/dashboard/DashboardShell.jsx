@@ -16,7 +16,7 @@ export default function DashboardShell() {
 
   return (
     <div className="min-h-screen bg-slate-100 flex flex-col">
-      <header className="bg-slate-900 text-white px-6 py-4 flex flex-col gap-3 shadow md:flex-row md:items-center md:justify-between">
+      <header className="bg-slate-900 text-white px-6 py-3 flex flex-col gap-3 shadow md:flex-row md:items-center md:justify-between">
         <div>
           <h1 className="text-xl md:text-2xl font-semibold">
             MAHY Khoory Analytics

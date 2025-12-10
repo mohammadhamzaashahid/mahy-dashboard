@@ -57,11 +57,12 @@ const TILE_COLOR_MAP = {
   "follow-ups": { bg: "#A9C5FF" },
 };
 
-const FIRST_ROW_COUNT = 5;
+const FIRST_ROW_COUNT = 7;
 const GRID_CLASSES =
-  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-6";
+  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7 gap-5 sm:gap-6";
+
 const FIRST_ROW_GRID_CLASSES =
-  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-5 sm:gap-6";
+  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7 gap-5 sm:gap-6";
 
 export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
   const firstRowTiles = tiles.slice(0, FIRST_ROW_COUNT);
@@ -131,18 +132,18 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="space-y-10">
+   <div className="max-w-screen-2xl mx-auto px-4 py-4">
+      <div className="space-y-3">
         {firstRowTiles.length > 0 && (
-          <div className="rounded-[38px] border-[6px] border-[#1C3D72] bg-[#DFF7FF] p-4 shadow-xl shadow-[#1C3D72]/15">
-            <div className={clsx(FIRST_ROW_GRID_CLASSES, "gap-4")}>
+          <div className="rounded-[38px] border-[6px] border-[#1C3D72] bg-[#DFF7FF] p-2 shadow-xl shadow-[#1C3D72]/15">
+            <div className={clsx(FIRST_ROW_GRID_CLASSES, "gap-2")}>
               {firstRowTiles.map(renderTile)}
             </div>
           </div>
         )}
         {remainingTiles.length > 0 && (
-          <div className="rounded-[38px] border-[6px] border-[#1C3D72] bg-white/80 p-4 shadow-2xl shadow-[#1C3D72]/20">
-            <div className={clsx(GRID_CLASSES, "gap-4")}>
+          <div className="rounded-[38px] border-[6px] border-[#1C3D72] bg-white/80 p-2 shadow-2xl shadow-[#1C3D72]/20">
+            <div className={clsx(GRID_CLASSES, "gap-2")}>
               {remainingTiles.map((tile, idx) =>
                 renderTile(tile, idx + firstRowTiles.length)
               )}
