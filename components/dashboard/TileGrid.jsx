@@ -85,6 +85,7 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
     const isActive = activeTileId === tile.id;
     const neonShadow = `0 6px 22px ${palette.border}88, 0 14px 45px ${palette.bg}A0`;
     const neonGradient = `radial-gradient(circle at 45% 30%, ${palette.border}60 0%, ${palette.bg}35 45%, transparent 75%)`;
+    const iconSize = tile.id === "orders-at-loss" ? 105 : 80;
 
     return (
       <button
@@ -119,8 +120,8 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
           <Image
             src={tile.icon}
             alt={tile.label}
-            width={80}
-            height={80}
+            width={iconSize}
+            height={iconSize}
             className="object-contain drop-shadow-sm transition-transform duration-200 group-hover:scale-105"
           />
           <p className="text-sm font-semibold text-[#1C3D72] leading-tight">
