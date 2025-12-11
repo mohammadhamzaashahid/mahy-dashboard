@@ -30,7 +30,7 @@ export default function ReportViewer({ tile, onBack }) {
       {/* Report Content */}
       <div className="flex-1 overflow-hidden">
         {hasReport ? (
-          <iframegit 
+          <iframe
             src={tile.reportUrl}
             allowFullScreen
             className="w-full h-full border-none"
