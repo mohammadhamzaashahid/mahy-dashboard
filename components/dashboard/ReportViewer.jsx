@@ -8,7 +8,6 @@ export default function ReportViewer({ tile, onBack }) {
   return (
     <div className="flex flex-col w-full h-screen bg-white">
 
-      {/* Header */}
       <div className="flex justify-between items-center px-6 py-4 border-b bg-slate-50 shadow-sm">
 
         <button
@@ -26,8 +25,6 @@ export default function ReportViewer({ tile, onBack }) {
           {tile.label}
         </div>
       </div>
-
-      {/* Report Content */}
       <div className="flex-1 overflow-hidden">
         {hasReport ? (
           <iframe

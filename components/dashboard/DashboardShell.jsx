@@ -59,8 +59,6 @@ export default function DashboardShell() {
             />
           </section>
         )}
-
-        {/* If tile selected ƒ+' show full-screen report viewer */}
         {selectedTile && (
           <section className="flex-1 bg-white animate-fade-in">
             <ReportViewer

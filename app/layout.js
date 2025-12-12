@@ -16,6 +16,7 @@ export const metadata = {
   metadataBase: new URL("https://www.mkanalyticshub.com"),
   icons: {
     icon: "/data-analytics.ico",
+    apple: "/data-analytics.png"
   },
   openGraph: {
     title: "Mahy Khoory Analytics",
