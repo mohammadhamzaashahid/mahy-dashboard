@@ -1,11 +1,19 @@
 export const TILE_CONFIG = [
-  {
-    id: "cash-flow",
-    label: "Cash Flow",
-    icon: "/dashboard-icons/cash-flow.png",
-    category: "Finance",
+//   {
+//     id: "cash-flow",
+//     label: "Cash Flow",
+//     icon: "/dashboard-icons/cash-flow.png",
+//     category: "Finance",
+//     reportUrl:
+//       "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+//   },
+{
+    id: "trial-balance",
+    label: "Trail Balance",
+    icon: "/dashboard-icons/trail-balance.png",
+    category: "Sales",
     reportUrl:
-      "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+      "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
   },
   {
     id: "profit-loss",
@@ -63,14 +71,14 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-  {
-    id: "trial-balance",
-    label: "Trail Balance",
-    icon: "/dashboard-icons/trail-balance.png",
-    category: "Sales",
-    reportUrl:
-      "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
-  },
+//   {
+//     id: "trial-balance",
+//     label: "Trail Balance",
+//     icon: "/dashboard-icons/trail-balance.png",
+//     category: "Sales",
+//     reportUrl:
+//       "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
+//   },
   {
     id: "sales-vs-collection",
     label: "Sales vs Collection",
