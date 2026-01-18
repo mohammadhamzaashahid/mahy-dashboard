@@ -1,266 +1,335 @@
 export const TILE_CONFIG = [
-    {
-        id: "cash-flow",
-        label: "Cash Flow",
-        icon: "/dashboard-icons/cash-flow.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "profit-loss",
-        label: "Profit & Loss",
-        icon: "/dashboard-icons/accounting.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=3bf1ec72-8b8a-4a48-93b9-c9affbf12328&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "salary-summary",
-        label: "Salary Summary",
-        icon: "/dashboard-icons/salary.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=eb95ffb2-c222-499a-ae09-3b3c1cf74647&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "bank-balance",
-        label: "Bank Balance",
-        icon: "/dashboard-icons/bank.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=f2ce8fbd-0348-4146-a6c3-d97170ff6269&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    // {
-    //     id: "trial-balance",
-    //     label: "Trial Balance",
-    //     icon: "/dashboard-icons/book.png",
-    //     category: "Finance",
-    //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    // },
-    {
-        id: "collection",
-        label: "Collection",
-        icon: "/dashboard-icons/tips.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=902e41fd-576b-46ce-b2e1-773a7cda47ae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
+  {
+    id: "cash-flow",
+    label: "Cash Flow",
+    icon: "/dashboard-icons/cash-flow.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "profit-loss",
+    label: "Profit & Loss",
+    icon: "/dashboard-icons/accounting.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=3bf1ec72-8b8a-4a48-93b9-c9affbf12328&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "salary-summary",
+    label: "Salary Summary",
+    icon: "/dashboard-icons/salary.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=eb95ffb2-c222-499a-ae09-3b3c1cf74647&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "bank-balance",
+    label: "Bank Balance",
+    icon: "/dashboard-icons/bank.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=f2ce8fbd-0348-4146-a6c3-d97170ff6269&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  // {
+  //     id: "trial-balance",
+  //     label: "Trial Balance",
+  //     icon: "/dashboard-icons/book.png",
+  //     category: "Finance",
+  //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  // },
+  {
+    id: "collection",
+    label: "Collection",
+    icon: "/dashboard-icons/tips.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=902e41fd-576b-46ce-b2e1-773a7cda47ae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 
-    {
-        id: "sales-cost-centerwise",
-        label: "Sales by Cost Center",
-        icon: "/dashboard-icons/sales.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=d9332fbf-74e2-49c4-a053-5724b8db4dae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "sales-brandwise",
-        label: "Sales Brandwise",
-        icon: "/dashboard-icons/brand.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "sales-vs-collection",
-        label: "Sales vs Collection",
-        icon: "/dashboard-icons/tips.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=7fa715e8-a836-4bbd-9aa6-d8ed4378be9b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    // {
-    //     id: "sales-brandwise",
-    //     label: "Sales Brandwise",
-    //     icon: "/dashboard-icons/brand.png",
-    //     category: "Sales",
-    //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    // },
-    {
-        id: "sales-vs-target",
-        label: "Sales vs Target",
-        icon: "/dashboard-icons/medium.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=e7cd96c9-9823-464a-9ee6-2105de712563&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "delivered-not-invoiced",
-        label: "Delivered not Invoiced",
-        icon: "/dashboard-icons/delivered.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=f39c6f65-a3d6-4714-a887-557956338289&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
+  {
+    id: "sales-cost-centerwise",
+    label: "Sales by Cost Center",
+    icon: "/dashboard-icons/sales.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=d9332fbf-74e2-49c4-a053-5724b8db4dae&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "sales-brandwise",
+    label: "Sales Brandwise",
+    icon: "/dashboard-icons/brand.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "trial-balance",
+    label: "Trail Balance",
+    icon: "/dashboard-icons/trail-balance.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
+  },
+  {
+    id: "sales-vs-collection",
+    label: "Sales vs Collection",
+    icon: "/dashboard-icons/tips.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=7fa715e8-a836-4bbd-9aa6-d8ed4378be9b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  // {
+  //     id: "sales-brandwise",
+  //     label: "Sales Brandwise",
+  //     icon: "/dashboard-icons/brand.png",
+  //     category: "Sales",
+  //     reportUrl: "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  // },
+  {
+    id: "sales-vs-target",
+    label: "Sales vs Target",
+    icon: "/dashboard-icons/medium.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=e7cd96c9-9823-464a-9ee6-2105de712563&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "delivered-not-invoiced",
+    label: "Delivered not Invoiced",
+    icon: "/dashboard-icons/delivered.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=f39c6f65-a3d6-4714-a887-557956338289&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 
-    {
-        id: "invoice-receivables",
-        label: "Receivables Summary",
-        icon: "/dashboard-icons/money.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=cef60576-2fd7-419a-8b52-92dbdd08fa38&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "customer-complain",
-        label: "Customer Complaint",
-        icon: "/dashboard-icons/complain.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=4267208a-0e1a-49c9-ac0e-b8fff9183949&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "delayed-collection",
-        label: "Overdue Collection",
-        icon: "/dashboard-icons/expired.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "customer-balance",
-        label: "Customer Balance",
-        icon: "/dashboard-icons/risk.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=d804f308-445a-4c2c-84b8-3f9ed24ac84c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "customer-aging",
-        label: "Customer Aging",
-        icon: "/dashboard-icons/age.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=cef60576-2fd7-419a-8b52-92dbdd08fa38&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
+  {
+    id: "invoice-receivables",
+    label: "Receivables Summary",
+    icon: "/dashboard-icons/money.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=cef60576-2fd7-419a-8b52-92dbdd08fa38&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "customer-complain",
+    label: "Customer Complaint",
+    icon: "/dashboard-icons/complain.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=4267208a-0e1a-49c9-ac0e-b8fff9183949&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "delayed-collection",
+    label: "Overdue Collection",
+    icon: "/dashboard-icons/expired.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  
+  {
+    id: "customer-balance",
+    label: "Customer Balance",
+    icon: "/dashboard-icons/risk.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=d804f308-445a-4c2c-84b8-3f9ed24ac84c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "customer-overview",
+    label: "Customer Overview",
+    icon: "/dashboard-icons/customer-overview.png",
+    category: "Sales",
+    // old
+    // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    // new
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "customer-aging",
+    label: "Customer Aging",
+    icon: "/dashboard-icons/age.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=cef60576-2fd7-419a-8b52-92dbdd08fa38&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 
-    {
-        id: "orders-at-loss",
-        label: "Orders at Loss",
-        icon: "/dashboard-icons/burn-money.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=f0cf60aa-7c17-410f-af3b-c4dbba607673&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "credit-per-sales-unit",
-        label: "Credit per Sales Unit",
-        icon: "/dashboard-icons/credit-score.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=54ebabac-87c1-4b84-867b-b61347bdc42d&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "pdc-analysis",
-        label: "PDC Analysis",
-        icon: "/dashboard-icons/check.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=82169115-1493-432a-b00d-d3f1170f90f6&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "customer-overdue",
-        label: "Customer Overdue",
-        icon: "/dashboard-icons/cheque.png",
-        category: "Receivables",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=0f993fdc-d7cd-414c-ab9e-10764fbbb686&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
+  {
+    id: "orders-at-loss",
+    label: "Orders at Loss",
+    icon: "/dashboard-icons/burn-money.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=f0cf60aa-7c17-410f-af3b-c4dbba607673&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "credit-per-sales-unit",
+    label: "Credit per Sales Unit",
+    icon: "/dashboard-icons/credit-score.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=54ebabac-87c1-4b84-867b-b61347bdc42d&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "pdc-analysis",
+    label: "PDC Analysis",
+    icon: "/dashboard-icons/check.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=82169115-1493-432a-b00d-d3f1170f90f6&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "customer-overdue",
+    label: "Customer Overdue",
+    icon: "/dashboard-icons/cheque.png",
+    category: "Receivables",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=0f993fdc-d7cd-414c-ab9e-10764fbbb686&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 
-    {
-        id: "expenses",
-        label: "Expenses",
-        icon: "/dashboard-icons/bill.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=acb5da72-78e6-4eac-a262-abf6b30ce429&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "stock-purchase",
-        label: "Stock Purchase",
-        icon: "/dashboard-icons/inventory.png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=50bed716-0509-48f9-89d5-89d9838efb6f&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "non-stock-purchase",
-        label: "Non Stock Purchase",
-        icon: "/dashboard-icons/groceries.png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=3c0ab1d2-9c8a-4b82-8d06-3a34b69cef9c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "production",
-        label: "Production",
-        icon: "/dashboard-icons/factory.png",
-        category: "Operations",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=cc7833f2-ad49-451c-af93-0dbf6f78eefd&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "return-orders",
-        label: "Return Orders",
-        icon: "/dashboard-icons/warehouse.png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=a13e7f6b-0b2f-4e57-a4cd-2cc103aa29fd&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "payables-summary",
-        label: "Payables Summary",
-        icon: "/dashboard-icons/card-payment.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "vendor-item-analysis",
-        label: "Vendor/Item Analysis",
-        icon: "/dashboard-icons/cashier(1).png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "item-vendor-analysis",
-        label: "Item/Vendor Analysis",
-        icon: "/dashboard-icons/shopping-cart(1).png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "vendor-aging",
-        label: "Vendor Aging",
-        icon: "/dashboard-icons/age-limit.png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "vendor-overdue",
-        label: "Vendor Overdue",
-        icon: "/dashboard-icons/wait-time.png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=eebe8edf-a980-4344-86d2-e759e26c2b2a&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "vendor-analysis",
-        label: "Vendor Analysis",
-        icon: "/dashboard-icons/analysis.png",
-        category: "Procurement",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=674051d1-3320-4dae-8208-179bd49c1c76&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
+  {
+    id: "expenses",
+    label: "Expenses",
+    icon: "/dashboard-icons/bill.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=acb5da72-78e6-4eac-a262-abf6b30ce429&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "stock-purchase",
+    label: "Stock Purchase",
+    icon: "/dashboard-icons/inventory.png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=50bed716-0509-48f9-89d5-89d9838efb6f&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "production",
+    label: "Production",
+    icon: "/dashboard-icons/factory.png",
+    category: "Operations",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=cc7833f2-ad49-451c-af93-0dbf6f78eefd&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "non-stock-purchase",
+    label: "Non Stock Purchase",
+    icon: "/dashboard-icons/groceries.png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=3c0ab1d2-9c8a-4b82-8d06-3a34b69cef9c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "return-orders",
+    label: "Return Orders",
+    icon: "/dashboard-icons/warehouse.png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=a13e7f6b-0b2f-4e57-a4cd-2cc103aa29fd&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "payables-summary",
+    label: "Payables Summary",
+    icon: "/dashboard-icons/card-payment.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "vendor-item-analysis",
+    label: "Vendor/Item Analysis",
+    icon: "/dashboard-icons/cashier(1).png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "item-vendor-analysis",
+    label: "Item/Vendor Analysis",
+    icon: "/dashboard-icons/shopping-cart(1).png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "vendor-aging",
+    label: "Vendor Aging",
+    icon: "/dashboard-icons/age-limit.png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 
-    {
-        id: "maintenance",
-        label: "Maintenance",
-        icon: "/dashboard-icons/mechanic.png",
-        category: "Operations",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=ec255f09-7284-420b-9869-688c0091407a&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "fixed-assets",
-        label: "Fixed Assets",
-        icon: "/dashboard-icons/tangible-assets.png",
-        category: "Finance",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=2feb464a-653e-415e-bc5d-65c1fe705e75&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "opportunities",
-        label: "Opportunities",
-        icon: "/dashboard-icons/dashboard.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=7aa86e87-0ee0-40d0-b472-c61cff7325db&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "quotations",
-        label: "Quotations",
-        icon: "/dashboard-icons/handshake.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=237da626-5fc3-4c3e-ab9e-caa75b44c83d&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
-    {
-        id: "follow-ups",
-        label: "Follow Ups",
-        icon: "/dashboard-icons/customer-service.png",
-        category: "Sales",
-        reportUrl: "https://app.powerbi.com/reportEmbed?reportId=229ef0a3-1c89-4d00-8b2c-fc444a0b6346&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    },
+  {
+    id: "vendor-overdue",
+    label: "Vendor Overdue",
+    icon: "/dashboard-icons/wait-time.png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=eebe8edf-a980-4344-86d2-e759e26c2b2a&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "vendor-payments",
+    label: "Vendor Payment",
+    icon: "/dashboard-icons/vendor-payment.png",
+    category: "Procurement",
+    // old
+    // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=c8707726-1476-4422-a150-07d42e600247&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "vendor-analysis",
+    label: "Vendor Analysis",
+    icon: "/dashboard-icons/analysis.png",
+    category: "Procurement",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=674051d1-3320-4dae-8208-179bd49c1c76&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+
+  {
+    id: "maintenance",
+    label: "Maintenance",
+    icon: "/dashboard-icons/mechanic.png",
+    category: "Operations",
+    //old
+    // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=ec255f09-7284-420b-9869-688c0091407a&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    //new
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=ec255f09-7284-420b-9869-688c0091407a&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "fixed-assets",
+    label: "Fixed Assets",
+    icon: "/dashboard-icons/tangible-assets.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=2feb464a-653e-415e-bc5d-65c1fe705e75&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "opportunities",
+    label: "Opportunities",
+    icon: "/dashboard-icons/dashboard.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=7aa86e87-0ee0-40d0-b472-c61cff7325db&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "quotations",
+    label: "Quotations",
+    icon: "/dashboard-icons/handshake.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=237da626-5fc3-4c3e-ab9e-caa75b44c83d&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "follow-ups",
+    label: "Follow Ups",
+    icon: "/dashboard-icons/customer-service.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=229ef0a3-1c89-4d00-8b2c-fc444a0b6346&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 ];

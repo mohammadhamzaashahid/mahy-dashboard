@@ -19,6 +19,24 @@ const TILE_COLORS = [
   { bg: "#D7F9F1", border: TILE_BORDER_COLOR },
 ];
 
+const ROW_SIZES = [8, 8, 8, 8];
+
+function sliceIntoRows(tiles, sizes) {
+  const rows = [];
+  let index = 0;
+
+  for (const size of sizes) {
+    rows.push(tiles.slice(index, index + size));
+    index += size;
+  }
+
+  if (index < tiles.length) {
+    rows.push(tiles.slice(index));
+  }
+
+  return rows;
+}
+
 const TILE_COLOR_MAP = {
   "cash-flow": { bg: "#FADCC4" },
   "profit-loss": { bg: "#F49AC2" },
@@ -57,17 +75,39 @@ const TILE_COLOR_MAP = {
   "follow-ups": { bg: "#A9C5FF" },
 };
 
-const FIRST_ROW_COUNT = 7;
-const GRID_CLASSES =
-  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7 gap-5 sm:gap-6";
+const FIRST_ROW_COUNT = 8;
 
-const FIRST_ROW_GRID_CLASSES =
-  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7 gap-5 sm:gap-6";
+function adjustTileOrder(tiles) {
+  const copy = [...tiles];
+
+  // Move first tile of old 4th row to end of 3rd row
+  // Visual rows are 8-wide now
+  const indexToMove = 8 * 3; // first tile of 4th row
+  if (copy[indexToMove]) {
+    const [moved] = copy.splice(indexToMove, 1);
+    copy.splice(8 * 3 - 1, 0, moved);
+  }
+
+  return copy;
+}
+// const GRID_CLASSES =
+//   "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7 gap-5 sm:gap-6";
+const GRID_CLASSES =
+  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-5 sm:gap-6";
+
+const FIRST_ROW_GRID_CLASSES = GRID_CLASSES;
+// "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-7 gap-5 sm:gap-6";
 
 export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
-  const firstRowTiles = tiles.slice(0, FIRST_ROW_COUNT);
-  const remainingTiles = tiles.slice(FIRST_ROW_COUNT);
+  // const firstRowTiles = tiles.slice(0, FIRST_ROW_COUNT);
+  // const remainingTiles = tiles.slice(FIRST_ROW_COUNT);
 
+  const adjustedTiles = adjustTileOrder(tiles);
+
+  const firstRowTiles = adjustedTiles.slice(0, FIRST_ROW_COUNT);
+  const remainingTiles = adjustedTiles.slice(FIRST_ROW_COUNT);
+
+  const rows = sliceIntoRows(tiles, ROW_SIZES);
   const getPalette = (tileId, index) => {
     const mapped = TILE_COLOR_MAP[tileId];
     if (mapped) {
@@ -95,7 +135,9 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
         className={clsx(
           "group relative isolation-auto flex h-full flex-col items-center rounded-2xl border-2 px-4 py-5 text-center shadow-sm",
           "transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#1C3D72]/40",
-          isActive ? "scale-[1.02] shadow-lg" : "hover:-translate-y-0.5 hover:shadow-md"
+          isActive
+            ? "scale-[1.02] shadow-lg"
+            : "hover:-translate-y-0.5 hover:shadow-md",
         )}
         style={{
           backgroundColor: palette.bg,
@@ -133,7 +175,7 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
   };
 
   return (
-   <div className="max-w-screen-2xl mx-auto px-4 py-4">
+    <div className="max-w-screen-2xl mx-auto px-4 py-4">
       <div className="space-y-3">
         {firstRowTiles.length > 0 && (
           <div className="rounded-[38px] border-[6px] border-[#1C3D72] bg-[#DFF7FF] p-2 shadow-xl shadow-[#1C3D72]/15">
@@ -146,12 +188,34 @@ export default function TileGrid({ tiles, activeTileId, onSelectTile }) {
           <div className="rounded-[38px] border-[6px] border-[#1C3D72] bg-white/80 p-2 shadow-2xl shadow-[#1C3D72]/20">
             <div className={clsx(GRID_CLASSES, "gap-2")}>
               {remainingTiles.map((tile, idx) =>
-                renderTile(tile, idx + firstRowTiles.length)
+                renderTile(tile, idx + firstRowTiles.length),
               )}
             </div>
           </div>
         )}
       </div>
     </div>
+
+    // <div className="max-w-screen-2xl mx-auto px-4 py-4">
+    //   <div className="space-y-3">
+    //     {rows.map((rowTiles, rowIndex) => (
+    //       <div
+    //         key={rowIndex}
+    //         className={clsx(
+    //           "rounded-[38px] border-[6px] p-2 shadow-xl shadow-[#1C3D72]/15",
+    //           rowIndex === 0
+    //             ? "bg-[#DFF7FF] border-[#1C3D72]"
+    //             : "bg-white/80 border-[#1C3D72]",
+    //         )}
+    //       >
+    //         <div className={clsx(GRID_CLASSES, "gap-2")}>
+    //           {rowTiles.map((tile, idx) =>
+    //             renderTile(tile, idx + rowIndex * 8),
+    //           )}
+    //         </div>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
   );
 }
