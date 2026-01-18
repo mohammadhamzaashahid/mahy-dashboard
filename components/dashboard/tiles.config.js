@@ -13,7 +13,7 @@ export const TILE_CONFIG = [
     icon: "/dashboard-icons/trail-balance.png",
     category: "Sales",
     reportUrl:
-      "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
+      "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
   {
     id: "profit-loss",
@@ -101,6 +101,15 @@ export const TILE_CONFIG = [
     category: "Sales",
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=e7cd96c9-9823-464a-9ee6-2105de712563&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+
+  {
+    id: "sales-category-wise",
+    label: "Sales Category Wise",
+    icon: "/dashboard-icons/sales-category-wise.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=5cb1a077-ee0c-478b-8968-63cc14f4c490&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
   {
     id: "delivered-not-invoiced",
