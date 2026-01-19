@@ -179,7 +179,7 @@ export const TILE_CONFIG = [
     icon: "/dashboard-icons/customer-paym.png",
     category: "Sales",
     reportUrl:
-      "https://app.powerbi.com/links/VKJ7ZR9kWq?ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1&pbi_source=linkShare",
+      "https://app.powerbi.com/reportEmbed?reportId=1effecad-5e2d-4983-b4da-2195fbc303d7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
   {
     id: "orders-at-loss",
