@@ -153,17 +153,17 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=d804f308-445a-4c2c-84b8-3f9ed24ac84c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-  {
-    id: "customer-overview",
-    label: "Customer Overview",
-    icon: "/dashboard-icons/customer-overview.png",
-    category: "Sales",
-    // old
-    // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-    // new
-    reportUrl:
-      "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-  },
+//   {
+//     id: "customer-overview",
+//     label: "Customer Overview",
+//     icon: "/dashboard-icons/customer-overview.png",
+//     category: "Sales",
+//     // old
+//     // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+//     // new
+//     reportUrl:
+//       "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+//   },
   {
     id: "customer-aging",
     label: "Customer Aging",
