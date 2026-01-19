@@ -1,13 +1,13 @@
 export const TILE_CONFIG = [
-//   {
-//     id: "cash-flow",
-//     label: "Cash Flow",
-//     icon: "/dashboard-icons/cash-flow.png",
-//     category: "Finance",
-//     reportUrl:
-//       "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-//   },
-{
+  //   {
+  //     id: "cash-flow",
+  //     label: "Cash Flow",
+  //     icon: "/dashboard-icons/cash-flow.png",
+  //     category: "Finance",
+  //     reportUrl:
+  //       "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  //   },
+  {
     id: "trial-balance",
     label: "Trail Balance",
     icon: "/dashboard-icons/trail-balance.png",
@@ -71,14 +71,14 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=b2f79ccf-dbeb-40e8-a6cc-726dbb380ff7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-//   {
-//     id: "trial-balance",
-//     label: "Trail Balance",
-//     icon: "/dashboard-icons/trail-balance.png",
-//     category: "Sales",
-//     reportUrl:
-//       "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
-//   },
+  //   {
+  //     id: "trial-balance",
+  //     label: "Trail Balance",
+  //     icon: "/dashboard-icons/trail-balance.png",
+  //     category: "Sales",
+  //     reportUrl:
+  //       "https://app.powerbi.com/groups/me/reports/6454254a-aa3f-460d-b288-eb29b432b916/79c7fc24c918934cb585?experience=power-bi",
+  //   },
   {
     id: "sales-vs-collection",
     label: "Sales vs Collection",
@@ -144,7 +144,7 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-  
+
   {
     id: "customer-balance",
     label: "Customer Balance",
@@ -153,17 +153,17 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=d804f308-445a-4c2c-84b8-3f9ed24ac84c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-//   {
-//     id: "customer-overview",
-//     label: "Customer Overview",
-//     icon: "/dashboard-icons/customer-overview.png",
-//     category: "Sales",
-//     // old
-//     // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-//     // new
-//     reportUrl:
-//       "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-//   },
+  //   {
+  //     id: "customer-overview",
+  //     label: "Customer Overview",
+  //     icon: "/dashboard-icons/customer-overview.png",
+  //     category: "Sales",
+  //     // old
+  //     // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=13903119-eccd-49fd-895f-c74b8d793e89&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  //     // new
+  //     reportUrl:
+  //       "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  //   },
   {
     id: "customer-aging",
     label: "Customer Aging",
@@ -173,6 +173,14 @@ export const TILE_CONFIG = [
       "https://app.powerbi.com/reportEmbed?reportId=cef60576-2fd7-419a-8b52-92dbdd08fa38&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
 
+  {
+    id: "customer-payment",
+    label: "Customer Payments",
+    icon: "/dashboard-icons/customer-paym.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/links/VKJ7ZR9kWq?ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1&pbi_source=linkShare",
+  },
   {
     id: "orders-at-loss",
     label: "Orders at Loss",
