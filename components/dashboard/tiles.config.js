@@ -270,14 +270,14 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-  {
-    id: "item-vendor-analysis",
-    label: "Item/Vendor Analysis",
-    icon: "/dashboard-icons/shopping-cart(1).png",
-    category: "Procurement",
-    reportUrl:
-      "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-  },
+  // {
+  //   id: "item-vendor-analysis",
+  //   label: "Item/Vendor Analysis",
+  //   icon: "/dashboard-icons/shopping-cart(1).png",
+  //   category: "Procurement",
+  //   reportUrl:
+  //     "https://app.powerbi.com/reportEmbed?reportId=c719a2ed-12fc-4e5b-b29d-377416078f8c&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  // },
   {
     id: "vendor-aging",
     label: "Vendor Aging",
