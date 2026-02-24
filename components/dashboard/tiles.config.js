@@ -1,12 +1,4 @@
 export const TILE_CONFIG = [
-  //   {
-  //     id: "cash-flow",
-  //     label: "Cash Flow",
-  //     icon: "/dashboard-icons/cash-flow.png",
-  //     category: "Finance",
-  //     reportUrl:
-  //       "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
-  //   },
   {
     id: "trial-balance",
     label: "Trail Balance",
@@ -14,6 +6,15 @@ export const TILE_CONFIG = [
     category: "Sales",
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=fd6de78e-a6dc-47ea-8a97-3d6306190120&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
+  {
+    id: "cash-flow",
+    label: "Cash Flow",
+    icon: "/dashboard-icons/cash-flow.png",
+    category: "Finance",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    // "https://app.powerbi.com/reportEmbed?reportId=37df27f0-3ef9-4cf8-b6c4-2fce68b95c0b&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
   {
     id: "profit-loss",
@@ -179,7 +180,8 @@ export const TILE_CONFIG = [
     icon: "/dashboard-icons/customer-paym.png",
     category: "Sales",
     reportUrl:
-      "https://app.powerbi.com/reportEmbed?reportId=1effecad-5e2d-4983-b4da-2195fbc303d7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    "https://app.powerbi.com/reportEmbed?reportId=1effecad-5e2d-4983-b4da-2195fbc303d7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1"
+      // "https://app.powerbi.com/reportEmbed?reportId=1effecad-5e2d-4983-b4da-2195fbc303d7&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
   {
     id: "orders-at-loss",
@@ -303,7 +305,8 @@ export const TILE_CONFIG = [
     // old
     // reportUrl: "https://app.powerbi.com/reportEmbed?reportId=12d8aebb-8b4b-40f6-808d-8e351bcebc29&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
     reportUrl:
-      "https://app.powerbi.com/reportEmbed?reportId=c8707726-1476-4422-a150-07d42e600247&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+    "https://app.powerbi.com/reportEmbed?reportId=c8707726-1476-4422-a150-07d42e600247&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1" 
+    // "https://app.powerbi.com/reportEmbed?reportId=c8707726-1476-4422-a150-07d42e600247&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
   {
     id: "vendor-analysis",
