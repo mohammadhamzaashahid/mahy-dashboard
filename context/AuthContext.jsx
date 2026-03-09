@@ -134,6 +134,7 @@ const AuthProviderInner = ({ children }) => {
             name: profile.displayName || activeAccount.name,
             email: profile.mail || activeAccount.username,
             department: profile.department,
+            company: profile.companyName,
             account: activeAccount,
           });
         } catch (err) {
