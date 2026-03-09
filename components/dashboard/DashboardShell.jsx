@@ -11,6 +11,13 @@ export default function DashboardShell() {
   const [activeTileId, setActiveTileId] = useState(null);
   const { user, logoutRedirect } = useAuth();
 
+  console.log(user);
+  console.log(user.department);
+  console.log(user.company);
+  
+  
+  
+
   const selectedTile =
     TILE_CONFIG.find((t) => t.id === activeTileId) ?? null;
 

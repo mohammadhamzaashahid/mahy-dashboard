@@ -61,7 +61,7 @@ const AuthProviderInner = ({ children }) => {
   const { instance, accounts } = useMsal();
   const msalAuthenticated = useIsAuthenticated();
   const hydratedAccount = useAccount(
-    instance.getActiveAccount() ?? accounts[0] ?? {}
+    instance.getActiveAccount() ?? accounts[0] ?? {},
   );
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -110,16 +110,45 @@ const AuthProviderInner = ({ children }) => {
       instance.getActiveAccount() ?? hydratedAccount ?? accounts[0] ?? null;
 
     if (activeAccount) {
-      if (!instance.getActiveAccount()) {
-        instance.setActiveAccount(activeAccount);
-      }
-      setUser({
-        id: activeAccount.localAccountId,
-        name: activeAccount.name,
-        email: activeAccount.username,
-        account: activeAccount,
-      });
-      clearAuthError();
+      const loadProfile = async () => {
+        try {
+          await msalInitializationPromise;
+
+          if (!instance.getActiveAccount()) {
+            instance.setActiveAccount(activeAccount);
+          }
+
+          const tokenResp = await instance.acquireTokenSilent({
+            scopes: ["User.Read"],
+            account: activeAccount,
+          });
+
+          console.log("Token:", tokenResp);
+
+          const profile = await fetchUserProfile(tokenResp.accessToken);
+
+          console.log("Graph profile:", profile);
+
+          setUser({
+            id: activeAccount.localAccountId,
+            name: profile.displayName || activeAccount.name,
+            email: profile.mail || activeAccount.username,
+            department: profile.department,
+            account: activeAccount,
+          });
+        } catch (err) {
+          console.error("Graph profile load failed:", err);
+
+          setUser({
+            id: activeAccount.localAccountId,
+            name: activeAccount.name,
+            email: activeAccount.username,
+            account: activeAccount,
+          });
+        }
+      };
+
+      loadProfile();
     } else {
       setUser(null);
     }
@@ -134,16 +163,52 @@ const AuthProviderInner = ({ children }) => {
     clearAuthError,
   ]);
 
+  const fetchUserProfile = async (accessToken) => {
+    const response = await fetch(
+      "https://graph.microsoft.com/v1.0/me?$select=displayName,mail,department,companyName",
+      {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      },
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch Microsoft profile");
+    }
+    console.log(response);
+    
+
+    return response.json();
+  };
+
   const login = useCallback(async () => {
     setLoading(true);
     clearAuthError();
     try {
       const response = await instance.loginPopup(loginRequest);
       instance.setActiveAccount(response.account);
+
+      const tokenResp = await instance.acquireTokenSilent({
+        scopes: ["User.Read"],
+        account: response.account,
+      });
+
+      console.log(tokenResp);
+
+      const profile = await fetchUserProfile(tokenResp.accessToken);
+
+      console.log(profile);
+
       setUser({
         id: response.account.localAccountId,
-        name: response.account.name,
-        email: response.account.username,
+        // name: response.account.name,
+        // email: response.account.username,
+        // account: response.account,
+        name: profile.displayName || response.account.name,
+        email: profile.mail || response.account.username,
+        department: profile.department,
+        company: profile.companyName,
         account: response.account,
       });
       clearAuthError();
@@ -226,15 +291,18 @@ const AuthProviderInner = ({ children }) => {
         }
       }
     },
-    [instance]
+    [instance],
   );
 
   const getAccessToken = useCallback(
     (scopes = loginRequest.scopes) => acquireToken({ scopes }),
-    [acquireToken]
+    [acquireToken],
   );
 
-  const getApiToken = useCallback(() => acquireToken(apiRequest), [acquireToken]);
+  const getApiToken = useCallback(
+    () => acquireToken(apiRequest),
+    [acquireToken],
+  );
 
   const callApi = useCallback(
     async (url, options = {}) => {
@@ -260,7 +328,7 @@ const AuthProviderInner = ({ children }) => {
 
       return response.json();
     },
-    [getApiToken]
+    [getApiToken],
   );
 
   const value = useMemo(
@@ -277,8 +345,7 @@ const AuthProviderInner = ({ children }) => {
       getApiToken,
       callApi,
       msalInstance: instance,
-      hasAccounts:
-        Boolean(instance.getActiveAccount()) || accounts.length > 0,
+      hasAccounts: Boolean(instance.getActiveAccount()) || accounts.length > 0,
       authError,
       clearAuthError,
     }),
@@ -298,7 +365,7 @@ const AuthProviderInner = ({ children }) => {
       accounts,
       authError,
       clearAuthError,
-    ]
+    ],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
