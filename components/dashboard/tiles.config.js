@@ -360,4 +360,13 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=229ef0a3-1c89-4d00-8b2c-fc444a0b6346&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
+
+  {
+    id: "sales-invoice-by-sales-person",
+    label: "Sales Invoice by Sales Person",
+    icon: "/dashboard-icons/bill-copy.png",
+    category: "Sales",
+    reportUrl:
+      "https://app.powerbi.com/reportEmbed?reportId=5d452103-b75b-4e96-949b-3a1ddf5f71c9&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
+  },
 ];
