@@ -360,7 +360,6 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=229ef0a3-1c89-4d00-8b2c-fc444a0b6346&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-
   {
     id: "sales-invoice-by-sales-person",
     label: "Sales Invoice & Invoice Journal",
