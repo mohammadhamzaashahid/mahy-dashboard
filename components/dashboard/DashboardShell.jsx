@@ -49,7 +49,6 @@ export default function DashboardShell() {
       )}
 
       <main className="flex-1 flex flex-col">
-        {/* If no tile selected ƒ+' show tiles */}
         {!selectedTile && (
           <section className="flex-1 bg-slate-50/80 border-t border-slate-200">
             <TileGrid
