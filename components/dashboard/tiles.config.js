@@ -363,7 +363,7 @@ export const TILE_CONFIG = [
 
   {
     id: "sales-invoice-by-sales-person",
-    label: "Sales Invoice by Sales Person",
+    label: "Sales Invoice & Invoice Journal",
     icon: "/dashboard-icons/bill-copy.png",
     category: "Sales",
     reportUrl:
