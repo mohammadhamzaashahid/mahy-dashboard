@@ -368,11 +368,11 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=5d452103-b75b-4e96-949b-3a1ddf5f71c9&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
-  {
-    id: "frieght-charges",
-    label: "Frieght Charges",
-    icon: "/dashboard-icons/truck.png",
-    category: "Frieght",
-    reportUrl: "https://app.powerbi.com/reportEmbed?reportId=9a9fd0db-2258-4f8a-9a9a-572d016f15a8&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1"
-  }
+  // {
+  //   id: "frieght-charges",
+  //   label: "Frieght Charges",
+  //   icon: "/dashboard-icons/truck.png",
+  //   category: "Frieght",
+  //   reportUrl: "https://app.powerbi.com/reportEmbed?reportId=9a9fd0db-2258-4f8a-9a9a-572d016f15a8&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1"
+  // }
 ];
