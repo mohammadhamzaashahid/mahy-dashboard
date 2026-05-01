@@ -368,4 +368,11 @@ export const TILE_CONFIG = [
     reportUrl:
       "https://app.powerbi.com/reportEmbed?reportId=5d452103-b75b-4e96-949b-3a1ddf5f71c9&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1",
   },
+  {
+    id: "frieght-charges",
+    label: "Frieght Charges",
+    icon: "/dashboard-icons/truck.png",
+    category: "Frieght",
+    reportUrl: "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1"
+  }
 ];
