@@ -373,6 +373,6 @@ export const TILE_CONFIG = [
     label: "Frieght Charges",
     icon: "/dashboard-icons/truck.png",
     category: "Frieght",
-    reportUrl: "https://app.powerbi.com/reportEmbed?reportId=f51c6c47-41a1-4730-8f40-a3f076f6b361&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1"
+    reportUrl: "https://app.powerbi.com/reportEmbed?reportId=9a9fd0db-2258-4f8a-9a9a-572d016f15a8&autoAuth=true&ctid=2898c5cb-a11c-4f00-8f42-60a9047336f1"
   }
 ];
